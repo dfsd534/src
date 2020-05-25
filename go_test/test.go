@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"go_test/utils"
+)
 
 type Books struct {
 	title   string
@@ -31,4 +34,7 @@ func main() {
 	fmt.Println(Books{"a", "b", "c", 11})
 	fmt.Println(Books{title: "a1", author: "b1", subject: "c1", bookID: 21})
 	fmt.Println(Books{author: "c1", bookID: 3333})
+
+	fmt.Println("Age=", utils.Age, "Name=", utils.Name)
+
 }
